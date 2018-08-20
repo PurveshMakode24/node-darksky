@@ -33,4 +33,4 @@ app.post('/', function (req, res) {
 });
 
 app.listen(port);
-console.log("Server is running... Head over to localhost:8080 in your browser")
+console.log("Server is running... Head over to localhost:3000 in your browser")
