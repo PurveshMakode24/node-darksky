@@ -3,6 +3,11 @@ body {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
 }
+.head h1{
+  text-align: center;
+  color: #999;
+  margin-top: 40px;
+}
 .container {
   width: 600px;
   margin: 0 auto;
