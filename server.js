@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var request = require('request');
-var apiKey = '66b1fdc61a1a4198702b3fafc52537b2'; //Add your API key here
+var apiKey = '*********************'; //Add your API key here
 var port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
