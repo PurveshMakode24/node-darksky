@@ -24,6 +24,11 @@
           <p><%= error %></p>
         <% } %>
       </fieldset>
+      <div>
+        <% if(weather >=40) {%>
+          <p>Precautions to be taken: temp is above 40</p>
+        <%} %>
+      </div>
     </div>
   </body>
 </html>

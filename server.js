@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var request = require('request');
-var apiKey = '*********************'; //Add your API key here
+var apiKey = '66b1fdc61a1a4198702b3fafc52537b2'; //Add your API key here
 var port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
@@ -25,7 +25,7 @@ app.post('/', function (req, res) {
       if(weather.main === undefined){
         res.render('index', {weather: null, error: 'Error, please try again'});
       } else {
-        let weatherText = `It's ${weather.main.temp} degrees fahrenheit in ${weather.name}!`;
+        let weatherText = `It's ${((weather.main.temp-32)*5/9).toFixed(2)}(°C) degrees celsius in ${weather.name}!`; // precised to 2 decimal
         res.render('index', {weather: weatherText, error: null});
       }
     }
